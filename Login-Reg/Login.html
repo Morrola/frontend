@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="Login.css">
+  </head>
+  <body>
+    <div class="form-container">
+      <div>
+        <h4>Welcome back!</h4>
+      </div>
+
+      <!-- <div class="title">
+        <h1>Admin Login</h1>
+      </div> -->
+
+      <div class="image-container">
+        <div class="imageDiv">
+          <img src="../assets/ui.png" alt="" width="170px" height="160px" />
+        </div>
+      </div>
+
+      <form id="myForm">
+        <label>Email</label>
+        <input type="text" id="loginEmail" />
+
+        <label>Password</label>
+        <input type="password" id="loginPassword" />
+        <span class="errors" id="login-error"></span>
+
+        <p class="message">
+          Don't have an account? <a href="Regesteration.html">Register Now</a>
+        </p>
+
+        <input type="submit" value="Login" onclick="login()" />
+      </form>
+    </div>
+
+    <script src="Login.js"></script>
+  </body>
+</html>

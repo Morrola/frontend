@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="Dashboard.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h3><a href="#">Admin Panel</a></h3>
+            <ul class="nav">
+                <li><a href="Dashboard.html">Dashboard</a></li>
+                <li><a href="Users.html">Users</a></li>
+                <li><a href="categoty.html">Rates</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Navbar -->
+            <div class="navbar">
+                <button id="menu-toggle">☰</button>
+                
+                <label>Dashboard</label>
+               
+                <!-- <div class="search-bar">
+                    <input type="text" placeholder="Search..." id="search-input">
+                    <button onclick="searchProduct()">Search</button>
+                </div> -->
+            </div>
+
+            <!-- <div class="content"> -->
+                <!-- Add Product Form -->
+                <!-- <div class="add-product-form">
+                    <h3>Add New Product</h3>
+                    <input type="text" class="box" id="product-name" placeholder="Product Name">
+                    <input type="number" class="box" id="product-price" placeholder="Price">
+                    <input type="number" class="box" id="product-colors" placeholder="Number of Colors">
+                    <input type="number" class="box" id="product-quantity" placeholder="Quantity">
+                    <input type="file" class="box" id="productImage" accept="image/*">
+                    <br>
+                    <button onclick="addProduct()">Add Product</button>
+                </div>
+            </div> -->
+
+            <!-- Product Table -->
+            <div class="table-container">
+                <table id="product-table">
+                    <thead>
+                        <tr>
+                            <th>User Name</th>
+                            <th>Comment</th>
+                            <th>Time</th>
+                            <th>Rate</th>
+                           
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- سيتم إضافة المنتجات هنا ديناميكيًا -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="Dashboard.js"></script>
+</body>
+</html>
